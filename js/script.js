@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {});
 const adv = document.querySelector(".promo__adv"),
     genre = document.querySelector(".promo__genre"),
     bg = document.querySelector(".promo__bg"),
-    list = document.querySelector(".promo__interactive-list");
+    list = document.querySelector(".promo__interactive-list"),
+    form = document.querySelector(".add"),
+    chechbox = form.querySelector('[type="checkbox"]'),
+    inputValue = form.querySelector(".adding__input");
 
 const seriesDB = {
     series: [
@@ -24,4 +27,14 @@ seriesDB.series.forEach((item, idx) => {
     ${idx + 1} ${item}
     <div class="delete"></div>
 </li>`;
+});
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    response = {
+        text: inputValue.value,
+        check: chechbox.chechbox,
+    };
+    console.log(response);
 });
