@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin-left: 50px;
+}
+
+.btn {
+    width: 90%;
+    height: 300px;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 80px;
+    height: 40px;
+    margin-left: 40px;
+}
+.red {
+    background-color: red;
+}
